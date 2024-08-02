@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "一键复制Cookie",
+    "version": "1.0",
+    "description": "一键复制当前页面的Cookie，并按header格式输出。",
+    "permissions": [
+      "cookies",
+      "activeTab",
+      "tabs",
+      "storage"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+  
